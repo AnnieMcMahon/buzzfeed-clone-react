@@ -14,10 +14,7 @@ const AnswerBlock = ({ answerOptions, chosenAnswers }) => {
         setResult(answerOptions[0])
       }
     })
-  }, [result]);
-
-  console.log(result);
-
+  }, [result, answerOptions, chosenAnswers]);
 
   return (
     <div id="answer-block" className="answer-block">
